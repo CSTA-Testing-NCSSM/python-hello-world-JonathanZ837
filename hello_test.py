@@ -6,6 +6,6 @@ def test():
 if __name__ == "__main__":
     try:
         test()
-        print("All tests passed")  # Print success message after tests have run
+        return("All tests passed")  # Print success message after tests have run
     except AssertionError as e:
-        print("Test failed:", e)
+        return("Test failed:", e)
